@@ -1,0 +1,87 @@
+/*=============================================================================================	
+ Document   : StyleSheet
+ Author     : Rizki Nida Chaerulsyah - akuiki.net
+ ==============================================================================================*/
+@import url("../fonts/roboto_regular_macroman/stylesheet.css");
+@import url("../fonts/roboto_bold_macroman/stylesheet.css");
+body {
+    color: #333;
+    font-size: 12px;
+    font-family: "robotoregular";
+    min-height: 100%;
+    overflow-x: hidden;
+}
+body.apatau {}
+.italic { font-style: italic; }
+.bold { font-weight: bold; }
+.regular { font-weight: lighter; }
+.float-left{
+    float:left;
+}
+.float-right{
+    float:right;
+}
+
+p {
+    margin: 1px 0 15px;
+    line-height: 20px;
+}
+input, textarea, select {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    border: 1px solid #D8D8D8;
+    padding: 10px;
+    margin: 0;
+    color: #666;
+}
+input[type=checkbox], input[type=radio] {
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-left-style: none;
+}
+h1 { font-size: 32px; }
+h2 { font-size: 28px; }
+h3 { font-size: 24px; }
+h4 { font-size: 20px; }
+h5 { font-size: 16px; }
+h6 { font-size: 14px; }
+
+/* structure
+----------------------------------------------------------------------------------------------*/
+#container {
+    position: relative;
+    min-width: 960px;
+    z-index: 1;
+}
+.title{width: 90%;margin:20px auto;}
+.title:after{
+    display: block;
+    content: " ";
+    clear: both;
+}
+.title h2{
+    font-size: 36px;
+    font-family: "robotobold";
+    text-transform: uppercase;
+    color: #999;
+    border-bottom: 5px solid #06cee6;
+    float: left;
+}
+.title nav{float: right;margin:3px 0 0 0;}
+.title nav a{
+    font-family: "robotobold";
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    margin: 0 0 0 5px ;
+    border:2px solid #CCC;
+    color: #999;
+}
+.title nav a.active,
+.title nav a:hover{
+    border-color: #BBB;
+    background: #CCC;
+    color: #FFF;
+}
