@@ -6,28 +6,14 @@
         <link rel="shortcut icon" type="images/x-icon" href="favicon.ico"/>
         <link rel="stylesheet" type="text/css" href="css/reset.css"/>	
         <link rel="stylesheet" type="text/css" href="css/style.css"/>
-        <link rel="stylesheet" type="text/css" href="css/slider.css"/>
+        <link rel="stylesheet" type="text/css" href="css/oblaSlider.css"/>
 
         <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>	
         <script type="text/javascript" src="js/TweenMax.min.js"></script>	
-        <script type="text/javascript" src="js/js_lib.js"></script>
+        <script type="text/javascript" src="js/oblaSlider.js"></script>
         <script type="text/javascript">
             $(document).ready(function () {
-                $("#slider_1").obla_slider({
-                    type: "slideY",
-                    intervalTime: 3,
-                    animDuration: 1.5,
-                    randomStart: true,
-                    ease:"Cubic.easeOut",
-                    afterSlide: function (a, b, c, d) {
-//                        console.log(d);
-                    },
-                    beforeSlide: function (a, b, c, d) {
-                        //                      console.log(d.cureen);
-                    }
-
-
-                });
+                $("#slider_1").obla_slider();
             });
         </script>
 
@@ -36,7 +22,7 @@
     <body>
         <div class="container">
             <div class="title">
-                <h2>k Slider</h2> 
+                <h2>Obla Slider</h2> 
                 <nav>
                     <a href="#demo1">Demo 1</a>
                     <a href="#demo2">Demo 2</a>
